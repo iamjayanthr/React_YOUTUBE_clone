@@ -9,7 +9,7 @@ import { fetchFromAPI } from './utils/fetchFromAPI'
   useEffect(()=>{
     fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`)
     .then((data)=>setVideos(data.items))
-  },[SelectedCategory])
+     },[SelectedCategory])
   return (
     <Stack sx={{flexDirection:{sx:"column",md:"row"}}}>{/*usually flex feed as column and for small-medium devices flex as row */}
       <Box sx={{height:{sx:"auto",md:"92vh"},
